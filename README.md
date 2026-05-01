@@ -55,12 +55,10 @@ Final dataset size: approximately 28,000 samples.
 ---
 
 ## Results
-Results
-Accuracy of BERT: 77.08%
-Weighted F1-score of BERT: 76.98%
-Model	Accuracy	Weighted F1
-BERT	77.08%	0.7698
-DistilBERT	76.82%	0.7669
+BERT Accuracy: 77.08%
+BERT Weighted F1-score: 76.98%
+DistilBERT Accuracy: 76.82%
+DistilBERT Weighted F1-score: 0.7669
 
 BERT outperforms DistilBERT by approximately 0.26 percentage points in accuracy,
 confirming that the full model provides a slight but consistent advantage on this task.
@@ -92,10 +90,9 @@ The model confuses similar emotions such as:
 
 ## Project Structure
 emotion-detection-bert/
-│
-├── Assil_Project_DL.ipynb
-├── README.md
-└── requirements.txt (optional)
+  Assil_Project_DL.ipynb
+  README.md
+  requirements.txt (optional)
 
 ---
 
