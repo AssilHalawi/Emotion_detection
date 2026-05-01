@@ -18,12 +18,12 @@ The dataset used is GoEmotions, released by Google Research.
 - Original format: multi-label
 - Converted to: single-label classification
 - Selected emotions:
-  - sadness
-  - love
-  - joy
-  - surprise
-  - anger
-  - fear
+  - sadness (label = 0)
+  - love (label = 1)
+  - joy (label = 2)
+  - surprise (label = 3)
+  - anger (label = 4)
+  - fear (label = 5)
 
 Final dataset size: approximately 28,000 samples.
 
@@ -55,8 +55,16 @@ Final dataset size: approximately 28,000 samples.
 ---
 
 ## Results
-- Accuracy: 77.08%
-- Weighted F1-score: 76.98%
+- Accuracy of BERT: 77.08%
+- Weighted F1-score of BERT: 76.98%
+
+| Model      | Accuracy | Weighted F1 |
+| BERT       | 77.08%   | 0.7698      |
+| DistilBERT | 76.82%   | 0.7669      |
+
+BERT outperforms DistilBERT by approximately 0.26 percentage points in accuracy,
+confirming that the full model provides a slight but consistent advantage on this task.
+
 
 ### Per-class highlights:
 - Love: best performing class
@@ -85,7 +93,7 @@ The model confuses similar emotions such as:
 ## Project Structure
 emotion-detection-bert/
 │
-├── DL_project.ipynb
+├── Assil_Project_DL.ipynb
 ├── README.md
 └── requirements.txt (optional)
 
@@ -97,13 +105,13 @@ This project shows that fine-tuned BERT models can effectively classify emotions
 
 -----------------------------------------------------------------
 
-## How to Reproduce the Results
+How to Reproduce the Results
 
 To reproduce the results of this project, follow the steps below.
 
 1. Clone the Repository
 Open a terminal and run the following commands:
-git clone https://github.com/YOUR_USERNAME/emotion-detection-bert.git
+git clone https://github.com/AssilHalawi/Emotion_detection
 cd emotion-detection-bert
 This will download all project files to your local machine.
 
