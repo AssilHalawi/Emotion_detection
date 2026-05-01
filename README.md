@@ -90,7 +90,7 @@ The model confuses similar emotions such as:
 
 ## Project Structure
 emotion-detection-bert/
-  Assil_Project_DL.ipynb
+  DL_Project_Code.ipynb
   README.md
   requirements.txt (optional)
 
@@ -133,7 +133,7 @@ Option 2: Use the original GoEmotions dataset
 Launch Jupyter Notebook:
 jupyter notebook
 Open the file:
-DL_project.ipynb
+DL_Project_Code.ipynb
 Run all cells sequentially.
 The notebook includes:
   •	data preprocessing
