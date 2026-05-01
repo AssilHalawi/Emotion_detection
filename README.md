@@ -55,12 +55,12 @@ Final dataset size: approximately 28,000 samples.
 ---
 
 ## Results
-- Accuracy of BERT: 77.08%
-- Weighted F1-score of BERT: 76.98%
-
-| Model      | Accuracy | Weighted F1 |
-| BERT       | 77.08%   | 0.7698      |
-| DistilBERT | 76.82%   | 0.7669      |
+Results
+Accuracy of BERT: 77.08%
+Weighted F1-score of BERT: 76.98%
+Model	Accuracy	Weighted F1
+BERT	77.08%	0.7698
+DistilBERT	76.82%	0.7669
 
 BERT outperforms DistilBERT by approximately 0.26 percentage points in accuracy,
 confirming that the full model provides a slight but consistent advantage on this task.
