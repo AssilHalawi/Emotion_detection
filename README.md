@@ -94,87 +94,143 @@ This project shows that fine-tuned BERT models can effectively classify emotions
 
 -----------------------------------------------------------------
 
-How to Reproduce the Results
+# How to Reproduce the Results
 
 To reproduce the results of this project, follow the steps below.
 
-1. Clone the Repository
+---
+
+## 1. Clone the Repository
+
 Open a terminal and run the following commands:
 
-  git clone https://github.com/AssilHalawi/Emotion_detection
-  
-  cd emotion-detection-bert
-  
+```bash
+git clone https://github.com/AssilHalawi/Emotion_detection
+cd emotion-detection-bert
+```
+
 This will download all project files to your local machine.
 
-3. Install Dependencies
+---
+
+## 2. Install Dependencies
+
 Install the required Python libraries using pip:
-  pip install transformers datasets torch scikit-learn pandas jupyter
+
+```bash
+pip install transformers datasets torch scikit-learn pandas jupyter
+```
+
 These libraries are required for preprocessing, training, and evaluation.
 
-4. Prepare the Dataset
+---
+
+## 3. Prepare the Dataset
+
 You have two options:
-Option 1: Use the dataset already included in the notebook
-  •	The notebook contains preprocessing steps, so no manual preparation is required
-Option 2: Use the original GoEmotions dataset
-  •	Download the dataset
-  •	Filter it to include only the six emotions
-  •	Convert multi-label data to single-label using idxmax
-  •	Ensure the dataset contains:
-    o	a "text" column
-    o	a "label" column
 
-5. Run the Notebook
+### Option 1: Use the dataset already included in the notebook
+
+The notebook already contains preprocessing steps, so no manual preparation is required.
+
+### Option 2: Use the original GoEmotions dataset
+
+Steps:
+
+- Download the dataset
+- Filter it to include only the six emotions
+- Convert multi-label data to single-label using `idxmax`
+- Ensure the dataset contains:
+  - a `"text"` column
+  - a `"label"` column
+
+---
+
+## 4. Run the Notebook
+
 Launch Jupyter Notebook:
+
+```bash
 jupyter notebook
+```
+
 Open the file:
+
+```bash
 DL_Project_Code.ipynb
+```
+
 Run all cells sequentially.
+
 The notebook includes:
-  •	data preprocessing
-  •	tokenization
-  •	model training
-  •	evaluation
-  •	demo examples
 
-6. Train the Model
+- data preprocessing
+- tokenization
+- model training
+- evaluation
+- demo examples
+
+---
+
+## 5. Train the Model
+
 Execute the training cells in the notebook.
-  •	The model will train for 3 epochs
-  •	Training loss and progress will be displayed
-  •	Total training time is approximately 30 minutes
 
-7. Evaluate the Model
+The model will:
+
+- train for 3 epochs
+- display training loss and progress
+- take approximately 30 minutes to complete
+
+---
+
+## 6. Evaluate the Model
+
 After training, the notebook will automatically compute:
-  •	accuracy
-  •	weighted F1-score
-  •	classification report
+
+- accuracy
+- weighted F1-score
+- classification report
+
 These metrics should be close to the reported results (~77%).
 
-8. Run Inference Examples
+---
+
+## 7. Run Inference Examples
+
 Use the helper function provided in the notebook:
-  run_example(text, case_type, expected, explanation)
-Example:
-  run_example(
-  text="I love you so much",
-  case_type="Easy case",
-  expected="love",
-  explanation="Strong positive emotional expression"
-  )
+
+```python
+run_example(
+    text="I love you so much",
+    case_type="Easy case",
+    expected="love",
+    explanation="Strong positive emotional expression"
+)
+```
+
 You can test:
-  •	simple cases
-  •	ambiguous cases
-  •	edge cases
-  •	failure cases
 
-9. Verify Results
+- simple cases
+- ambiguous cases
+- edge cases
+- failure cases
+
+---
+
+## 8. Verify Results
+
 To confirm correct reproduction:
-  •	accuracy should be around 77%
-  •	model should correctly classify clear emotional sentences
-  •	model should show limitations on ambiguous or neutral inputs
 
-Notes
-  •	Results may vary slightly due to randomness in training
-  •	GPU usage (like on Google Colab) is recommended for faster training
-  •	The notebook already includes all necessary steps for end-to-end execution
+- accuracy should be around 77%
+- the model should correctly classify clear emotional sentences
+- the model should show limitations on ambiguous or neutral inputs
 
+---
+
+## Notes
+
+- Results may vary slightly due to randomness in training
+- GPU usage (such as Google Colab) is recommended for faster training
+- The notebook already includes all necessary steps for end-to-end execution
 
