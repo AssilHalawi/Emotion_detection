@@ -196,7 +196,6 @@ Emotion_detection/
 ├── DL_Project_Code.ipynb
 ├── DL_Project_Report.pdf
 ├── README.md
-├── requirements.txt
 └── images/
 ```
 
