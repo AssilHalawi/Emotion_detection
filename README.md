@@ -88,14 +88,6 @@ The model confuses similar emotions such as:
 
 ---
 
-## Project Structure
-emotion-detection-bert/
-  DL_Project_Code.ipynb
-  README.md
-  requirements.txt (optional)
-
----
-
 ## Conclusion
 This project shows that fine-tuned BERT models can effectively classify emotions in text, while also highlighting challenges such as ambiguity and overlapping emotional expressions.
 
@@ -108,16 +100,19 @@ To reproduce the results of this project, follow the steps below.
 
 1. Clone the Repository
 Open a terminal and run the following commands:
-git clone https://github.com/AssilHalawi/Emotion_detection
-cd emotion-detection-bert
+
+  git clone https://github.com/AssilHalawi/Emotion_detection
+  
+  cd emotion-detection-bert
+  
 This will download all project files to your local machine.
 
-2. Install Dependencies
+3. Install Dependencies
 Install the required Python libraries using pip:
   pip install transformers datasets torch scikit-learn pandas jupyter
 These libraries are required for preprocessing, training, and evaluation.
 
-3. Prepare the Dataset
+4. Prepare the Dataset
 You have two options:
 Option 1: Use the dataset already included in the notebook
   •	The notebook contains preprocessing steps, so no manual preparation is required
@@ -129,7 +124,7 @@ Option 2: Use the original GoEmotions dataset
     o	a "text" column
     o	a "label" column
 
-4. Run the Notebook
+5. Run the Notebook
 Launch Jupyter Notebook:
 jupyter notebook
 Open the file:
@@ -142,20 +137,20 @@ The notebook includes:
   •	evaluation
   •	demo examples
 
-5. Train the Model
+6. Train the Model
 Execute the training cells in the notebook.
   •	The model will train for 3 epochs
   •	Training loss and progress will be displayed
   •	Total training time is approximately 30 minutes
 
-6. Evaluate the Model
+7. Evaluate the Model
 After training, the notebook will automatically compute:
   •	accuracy
   •	weighted F1-score
   •	classification report
 These metrics should be close to the reported results (~77%).
 
-7. Run Inference Examples
+8. Run Inference Examples
 Use the helper function provided in the notebook:
   run_example(text, case_type, expected, explanation)
 Example:
@@ -171,7 +166,7 @@ You can test:
   •	edge cases
   •	failure cases
 
-8. Verify Results
+9. Verify Results
 To confirm correct reproduction:
   •	accuracy should be around 77%
   •	model should correctly classify clear emotional sentences
