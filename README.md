@@ -127,15 +127,11 @@ These libraries are required for preprocessing, training, and evaluation.
 
 ## 3. Prepare the Dataset
 
-You have two options:
+### Download from link: 
 
-### Option 1: Use the dataset already included in the notebook
+https://www.kaggle.com/datasets/shivamb/go-emotions-google-emotions-dataset
 
-The notebook already contains preprocessing steps, so no manual preparation is required.
-
-### Option 2: Use the original GoEmotions dataset
-
-Steps:
+### Steps to prepare
 
 - Download the dataset
 - Filter it to include only the six emotions
