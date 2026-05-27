@@ -79,6 +79,20 @@ The model confuses similar emotions such as:
 
 ---
 
+## Project Structure
+
+```text
+Emotion_detection/
+│
+├── DL_Project_Code.ipynb
+├── DL_Project_Report.pdf
+├── README.md
+├── requirements.txt
+└── images/
+```
+
+---
+
 ## Limitations
 - Multi-label data simplified to single-label
 - No neutral class
